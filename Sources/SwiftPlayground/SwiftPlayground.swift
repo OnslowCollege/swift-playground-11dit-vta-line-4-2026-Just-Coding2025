@@ -22,7 +22,6 @@ struct SwiftPlayground {
         var runningSaturday = true
         var runningSunday = true
         let totalTimeInWeek = 168.0
-
         let socialPlatforms = ["Facebook", "Snapchat", "Instagram", "Discord","Other"]
 
 
@@ -38,7 +37,7 @@ struct SwiftPlayground {
                 if timeAllowed >= 1 {
                     if timeAllowed <= 5 {
                         runningLesser = false
-                        
+
                     }
                     else {
                         errorInput()
