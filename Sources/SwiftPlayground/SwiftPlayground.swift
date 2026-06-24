@@ -21,6 +21,7 @@ struct SwiftPlayground {
         var runningFriday = true
         var runningSaturday = true
         var runningSunday = true
+        let totalTimeInWeek = 168.0
 
         let socialPlatforms = ["Facebook", "Snapchat", "Instagram", "Discord","Other"]
 
@@ -152,6 +153,11 @@ struct SwiftPlayground {
             runningGreater = false
             
 
+        }
+        let counterTotal = counterMonday + counterTuesday + counterWednesday + counterThursday + counterFriday + counterSaturday + counterSunday
+        if counterTotal >= totalTimeInWeek {
+            print("Would you mind sharing your time-turner with the rest of us? We mortals don't have time travel.")
+            print("The total screen time was more than the number of hours in the week. This is, obviously, over the limit.")
         }
     }
 }
