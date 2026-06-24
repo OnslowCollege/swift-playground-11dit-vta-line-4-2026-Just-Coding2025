@@ -40,124 +40,124 @@ struct SwiftPlayground {
                 if timeAllowed >= 1 {
                     if timeAllowed <= 5 {
                                 while runningGreater == true {
-            while runningMonday == true {
-                if platformChooser <= 3 {
-                    platformChooser = platformChooser + 1
+                                    while runningMonday == true {
+                                        if platformChooser <= 3 {
+                                            platformChooser = platformChooser + 1
 
-                    print("How many hours did you spend on \(socialPlatforms[platformChooser]) this monday?")
-                    if let userInput = readLine(), let temporaryCounter = Double(userInput) {
-                        counterMonday = counterMonday + temporaryCounter
-                    }
-                    else {
-                        errorInput()
-                    }
-                }
-                else {
-                    runningMonday = false
-                }
-            }
-            platformChooser = 0
-            while runningTuesday == true {
-                if platformChooser <= 3 {
-                    platformChooser = platformChooser + 1
+                                            print("How many hours did you spend on \(socialPlatforms[platformChooser]) this monday?")
+                                            if let userInput = readLine(), let temporaryCounter = Double(userInput) {
+                                                counterMonday = counterMonday + temporaryCounter
+                                            }
+                                            else {
+                                                errorInput()
+                                            }
+                                        }
+                                        else {
+                                            runningMonday = false
+                                        }
+                                    }
+                                    platformChooser = 0
+                                    while runningTuesday == true {
+                                        if platformChooser <= 3 {
+                                            platformChooser = platformChooser + 1
 
-                    print("How many hours did you spend on \(socialPlatforms[platformChooser]) this Tuesday?")
-                    if let userInput = readLine(), let temporaryCounter = Double(userInput) {
-                        counterTuesday = counterTuesday + temporaryCounter
-                    }
-                    else {
-                        errorInput()
-                    }
-                }
-                else {
-                    runningTuesday = false
-                }
-            }
-            platformChooser = 0
-            while runningWednesday == true {
-                if platformChooser <= 3 {
-                    platformChooser = platformChooser + 1
+                                            print("How many hours did you spend on \(socialPlatforms[platformChooser]) this Tuesday?")
+                                            if let userInput = readLine(), let temporaryCounter = Double(userInput) {
+                                                counterTuesday = counterTuesday + temporaryCounter
+                                            }
+                                            else {
+                                                errorInput()
+                                            }
+                                        }
+                                        else {
+                                            runningTuesday = false
+                                        }
+                                    }
+                                    platformChooser = 0
+                                    while runningWednesday == true {
+                                        if platformChooser <= 3 {
+                                            platformChooser = platformChooser + 1
 
-                    print("How many hours did you spend on \(socialPlatforms[platformChooser]) this wednesday?")
-                    if let userInput = readLine(), let temporaryCounter = Double(userInput) {
-                        counterWednesday = counterWednesday + temporaryCounter
-                    }
-                    else {
-                        errorInput()
-                    }
-                }
-                else {
-                    runningWednesday = false
-                }
-            }
-            platformChooser = 0
-            while runningThursday == true {
-                if platformChooser <= 3 {
-                    platformChooser = platformChooser + 1
+                                            print("How many hours did you spend on \(socialPlatforms[platformChooser]) this wednesday?")
+                                            if let userInput = readLine(), let temporaryCounter = Double(userInput) {
+                                                counterWednesday = counterWednesday + temporaryCounter
+                                            }
+                                            else {
+                                                errorInput()
+                                            }
+                                        }
+                                        else {
+                                            runningWednesday = false
+                                        }
+                                    }
+                                    platformChooser = 0
+                                    while runningThursday == true {
+                                        if platformChooser <= 3 {
+                                            platformChooser = platformChooser + 1
 
-                    print("How many hours did you spend on \(socialPlatforms[platformChooser]) this thursday?")
-                    if let userInput = readLine(), let temporaryCounter = Double(userInput) {
-                        counterThursday = counterThursday + temporaryCounter
-                    }
-                    else {
-                        errorInput()
-                    }
-                }
-                else {
-                    runningThursday = false
-                }
-            }
-            platformChooser = 0
-            while runningFriday == true {
-                if platformChooser <= 3 {
-                    platformChooser = platformChooser + 1
+                                            print("How many hours did you spend on \(socialPlatforms[platformChooser]) this thursday?")
+                                            if let userInput = readLine(), let temporaryCounter = Double(userInput) {
+                                                counterThursday = counterThursday + temporaryCounter
+                                            }
+                                            else {
+                                                errorInput()
+                                            }
+                                        }
+                                        else {
+                                            runningThursday = false
+                                        }
+                                    }
+                                    platformChooser = 0
+                                    while runningFriday == true {
+                                        if platformChooser <= 3 {
+                                            platformChooser = platformChooser + 1
 
-                    print("How many hours did you spend on \(socialPlatforms[platformChooser]) this friday?")
-                    if let userInput = readLine(), let temporaryCounter = Double(userInput) {
-                        counterFriday = counterFriday + temporaryCounter
-                    }
-                    else {
-                        errorInput()
-                    }
-                }
-                else {
-                    runningFriday = false
-                }
-            }
-            platformChooser = 0
-            while runningSaturday == true {
-                if platformChooser <= 3 {
-                    platformChooser = platformChooser + 1
+                                            print("How many hours did you spend on \(socialPlatforms[platformChooser]) this friday?")
+                                            if let userInput = readLine(), let temporaryCounter = Double(userInput) {
+                                                counterFriday = counterFriday + temporaryCounter
+                                            }
+                                            else {
+                                                errorInput()
+                                            }
+                                        }
+                                        else {
+                                            runningFriday = false
+                                        }
+                                    }
+                                    platformChooser = 0
+                                    while runningSaturday == true {
+                                        if platformChooser <= 3 {
+                                            platformChooser = platformChooser + 1
 
-                    print("How many hours did you spend on \(socialPlatforms[platformChooser]) this saturday?")
-                    if let userInput = readLine(), let temporaryCounter = Double(userInput) {
-                        counterSaturday = counterSaturday + temporaryCounter
-                    }
-                    else {
-                        errorInput()
-                    }
-                }
-                else {
-                    runningSaturday = false
-                }
-            }
-            platformChooser = 0
-            while runningSunday == true {
-                if platformChooser <= 3 {
-                    platformChooser = platformChooser + 1
+                                            print("How many hours did you spend on \(socialPlatforms[platformChooser]) this saturday?")
+                                            if let userInput = readLine(), let temporaryCounter = Double(userInput) {
+                                                counterSaturday = counterSaturday + temporaryCounter
+                                            }
+                                            else {
+                                                errorInput()
+                                            }
+                                        }
+                                        else {
+                                            runningSaturday = false
+                                        }
+                                    }
+                                    platformChooser = 0
+                                    while runningSunday == true {
+                                        if platformChooser <= 3 {
+                                            platformChooser = platformChooser + 1
 
-                    print("How many hours did you spend on \(socialPlatforms[platformChooser]) this sunday?")
-                    if let userInput = readLine(), let temporaryCounter = Double(userInput) {
-                        counterSunday = counterSunday + temporaryCounter
-                    }
-                    else {
-                        errorInput()
-                    }
-                }
-                else {
-                    runningSunday = false
-                }
-            }
+                                            print("How many hours did you spend on \(socialPlatforms[platformChooser]) this sunday?")
+                                            if let userInput = readLine(), let temporaryCounter = Double(userInput) {
+                                                counterSunday = counterSunday + temporaryCounter
+                                            }
+                                            else {
+                                                errorInput()
+                                            }
+                                        }
+                                        else {
+                                            runningSunday = false
+                                        }
+                                    }
 
 
             runningGreater = false
