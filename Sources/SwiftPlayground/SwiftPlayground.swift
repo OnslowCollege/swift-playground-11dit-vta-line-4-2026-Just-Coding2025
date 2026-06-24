@@ -38,26 +38,26 @@ struct SwiftPlayground {
             if let userInput = readLine(), let timeAllowed = Double(userInput) {
                 if timeAllowed >= 1 {
                     if timeAllowed <= 5 {
-                                while runningGreater == true {
-                                    while runningMonday == true {
-                                        if platformChooser <= 3 {
-                                            platformChooser = platformChooser + 1
+                        while runningGreater == true {
+                            while runningMonday == true {
+                                if platformChooser <= 3 {
+                                    platformChooser = platformChooser + 1
 
-                                            print("How many hours did you spend on \(socialPlatforms[platformChooser]) this monday?")
-                                            if let userInput = readLine(), let temporaryCounter = Double(userInput) {
-                                                counterMonday = counterMonday + temporaryCounter
-                                            }
-                                            else {
-                                                errorInput()
-                                            }
-                                        }
-                                        else {
+                                    print("How many hours did you spend on \(socialPlatforms[platformChooser]) this monday?")
+                                    if let userInput = readLine(), let temporaryCounter = Double(userInput) {
+                                        counterMonday = counterMonday + temporaryCounter
+                                    }
+                                    else {
+                                        errorInput()
+                                    }
+                                }
+                                else {
                                             if counterMonday >= 25 {
                                                 print("Give me your time travel tech now!")
-                                                print("There was more hours of screen than hours of day")
+                                                print("There was more hours of screen than hours of day.")
                                             }
                                             else {
-                                                print("You spent \(counterMonday) hours on screens today")
+                                                print("You spent \(counterMonday) hours on screens today.")
                                             }
                                             
                                             runningMonday = false
@@ -79,10 +79,10 @@ struct SwiftPlayground {
                                         else {
                                             if counterTuesday >= 25 {
                                                 print("Give me your time travel tech now!")
-                                                print("There was more hours of screen than hours of day")
+                                                print("There was more hours of screen than hours of day.")
                                             }
                                             else {
-                                                print("You spent \(counterTuesday) hours on screens today")
+                                                print("You spent \(counterTuesday) hours on screens today.")
                                             }
                                             runningTuesday = false
                                         }
@@ -103,10 +103,10 @@ struct SwiftPlayground {
                                         else {
                                             if counterWednesday >= 25 {
                                                 print("Give me your time travel tech now!")
-                                                print("There was more hours of screen than hours of day")
+                                                print("There was more hours of screen than hours of day.")
                                             }
                                             else {
-                                                print("You spent \(counterWednesday) hours on screens today")
+                                                print("You spent \(counterWednesday) hours on screens today.")
                                             }
                                             runningWednesday = false
                                         }
@@ -127,10 +127,10 @@ struct SwiftPlayground {
                                         else {
                                             if counterThursday >= 25 {
                                                 print("Give me your time travel tech now!")
-                                                print("There was more hours of screen than hours of day")
+                                                print("There was more hours of screen than hours of day.")
                                             }
                                             else {
-                                                print("You spent \(counterThursday) hours on screens today")
+                                                print("You spent \(counterThursday) hours on screens today.")
                                             }
                                             runningThursday = false
                                         }
@@ -151,10 +151,10 @@ struct SwiftPlayground {
                                         else {
                                             if counterFriday >= 25 {
                                                 print("Give me your time travel tech now!")
-                                                print("There was more hours of screen than hours of day")
+                                                print("There was more hours of screen than hours of day.")
                                             }
                                             else {
-                                                print("You spent \(counterFriday) hours on screens today")
+                                                print("You spent \(counterFriday) hours on screens today.")
                                             }
                                             runningFriday = false
                                         }
@@ -175,10 +175,10 @@ struct SwiftPlayground {
                                         else {
                                             if counterSaturday >= 25 {
                                                 print("Give me your time travel tech now!")
-                                                print("There was more hours of screen than hours of day")
+                                                print("There was more hours of screen than hours of day.")
                                             }
                                             else {
-                                                print("You spent \(counterSaturday) hours on screens today")
+                                                print("You spent \(counterSaturday) hours on screens today.")
                                             }
                                             runningSaturday = false
                                         }
@@ -199,10 +199,10 @@ struct SwiftPlayground {
                                         else {
                                             if counterSaturday >= 25 {
                                                 print("Give me your time travel tech now!")
-                                                print("There was more hours of screen than hours of day")
+                                                print("There was more hours of screen than hours of day.")
                                             }
                                             else {
-                                                print("You spent \(counterSaturday) hours on screens today")
+                                                print("You spent \(counterSaturday) hours on screens today.")
                                             }
                                             runningSunday = false
                                         }
@@ -231,11 +231,12 @@ struct SwiftPlayground {
         }
         let counterTotal = counterMonday + counterTuesday + counterWednesday + counterThursday + counterFriday + counterSaturday + counterSunday
         if counterTotal <= 168 {
-            print("You spent \(counterTotal) hours on screens this week. this is")
+            
+            print("You spent \(counterTotal) hours on screens this week.")
         }
         else {
             print("Give me your tiem travel tech now!")
-            print("There was more hours of screen than hours in week")
+            print("There was more hours of screen than hours in week. This is, obviously, above the limit.")
         }
     }
 }
