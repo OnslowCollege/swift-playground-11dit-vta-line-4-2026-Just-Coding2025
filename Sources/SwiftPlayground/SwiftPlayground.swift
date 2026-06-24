@@ -122,89 +122,86 @@ struct SwiftPlayground {
                                 errorInput()
                                     }
                                 }
-                                        else {
-                                            if counterThursday >= 25 {
-                                                print("Give me your time travel tech now!")
-                                                print("There was more hours of screen than hours of day.")
-                                            }
-                                            else {
-                                                print("You spent \(counterThursday) hours on screens today.")
-                                            }
-                                            runningThursday = false
-                                        }
+                                else {
+                                    if counterThursday >= 25 {
+                                        print("Give me your time travel tech now!")
+                                        print("There was more hours of screen than hours of day.")
                                     }
-                                    platformChooser = 0
-                                    while runningFriday == true {
-                                        if platformChooser <= 3 {
-                                            platformChooser = platformChooser + 1
-
-                                            print("How many hours did you spend on \(socialPlatforms[platformChooser]) this friday?")
-                                            if let userInput = readLine(), let temporaryCounter = Double(userInput) {
-                                                counterFriday = counterFriday + temporaryCounter
-                                            }
-                                            else {
-                                                errorInput()
-                                            }
-                                        }
-                                        else {
-                                            if counterFriday >= 25 {
-                                                print("Give me your time travel tech now!")
-                                                print("There was more hours of screen than hours of day.")
-                                            }
-                                            else {
-                                                print("You spent \(counterFriday) hours on screens today.")
-                                            }
-                                            runningFriday = false
-                                        }
+                                    else {
+                                        print("You spent \(counterThursday) hours on screens today.")
                                     }
-                                    platformChooser = 0
-                                    while runningSaturday == true {
-                                        if platformChooser <= 3 {
-                                            platformChooser = platformChooser + 1
-
-                                            print("How many hours did you spend on \(socialPlatforms[platformChooser]) this saturday?")
-                                            if let userInput = readLine(), let temporaryCounter = Double(userInput) {
-                                                counterSaturday = counterSaturday + temporaryCounter
-                                            }
-                                            else {
-                                                errorInput()
-                                            }
-                                        }
-                                        else {
-                                            if counterSaturday >= 25 {
-                                                print("Give me your time travel tech now!")
-                                                print("There was more hours of screen than hours of day.")
-                                            }
-                                            else {
-                                                print("You spent \(counterSaturday) hours on screens today.")
-                                            }
-                                            runningSaturday = false
-                                        }
+                                    runningThursday = false
+                                }
+                            }
+                            platformChooser = 0
+                            while runningFriday == true {
+                                if platformChooser <= 3 {
+                                    platformChooser = platformChooser + 1
+                                    print("How many hours did you spend on \(socialPlatforms[platformChooser]) this friday?")
+                                    if let userInput = readLine(), let temporaryCounter = Double(userInput) {
+                                        counterFriday = counterFriday + temporaryCounter
                                     }
-                                    platformChooser = 0
-                                    while runningSunday == true {
-                                        if platformChooser <= 3 {
-                                            platformChooser = platformChooser + 1
-
-                                            print("How many hours did you spend on \(socialPlatforms[platformChooser]) this sunday?")
-                                            if let userInput = readLine(), let temporaryCounter = Double(userInput) {
-                                                counterSunday = counterSunday + temporaryCounter
-                                            }
-                                            else {
-                                                errorInput()
-                                            }
-                                        }
-                                        else {
-                                            if counterSaturday >= 25 {
-                                                print("Give me your time travel tech now!")
-                                                print("There was more hours of screen than hours of day.")
-                                            }
-                                            else {
-                                                print("You spent \(counterSaturday) hours on screens today.")
-                                            }
-                                            runningSunday = false
-                                        }
+                                    else {
+                                        errorInput()
                                     }
+                                }
+                                else {
+                                    if counterFriday >= 25 {
+                                        print("Give me your time travel tech now!")
+                                        print("There was more hours of screen than hours of day.")
+                                    }
+                                    else {
+                                        print("You spent \(counterFriday) hours on screens today.")
+                                    }
+                                    runningFriday = false
+                                }
+                            }
+                            platformChooser = 0
+                            while runningSaturday == true {
+                                if platformChooser <= 3 {
+                                    platformChooser = platformChooser + 1
+                                    print("How many hours did you spend on \(socialPlatforms[platformChooser]) this saturday?")
+                                    if let userInput = readLine(), let temporaryCounter = Double(userInput) {
+                                        counterSaturday = counterSaturday + temporaryCounter
+                                    }
+                                    else {
+                                        errorInput()
+                                    }
+                                }
+                                else {
+                                    if counterSaturday >= 25 {
+                                        print("Give me your time travel tech now!")
+                                        print("There was more hours of screen than hours of day.")
+                                    }
+                                    else {
+                                        print("You spent \(counterSaturday) hours on screens today.")
+                                    }
+                                    runningSaturday = false
+                                }
+                            }
+                            platformChooser = 0
+                            while runningSunday == true {
+                                if platformChooser <= 3 {
+                                    platformChooser = platformChooser + 1
+                                    print("How many hours did you spend on \(socialPlatforms[platformChooser]) this sunday?")
+                                    if let userInput = readLine(), let temporaryCounter = Double(userInput) {
+                                        counterSunday = counterSunday + temporaryCounter
+                                    }
+                                    else {
+                                        errorInput()
+                                    }
+                                }
+                                else {
+                                    if counterSaturday >= 25 {
+                                        print("Give me your time travel tech now!")
+                                        print("There was more hours of screen than hours of day.")
+                                    }
+                                    else {
+                                        print("You spent \(counterSaturday) hours on screens today.")
+                                    }
+                                    runningSunday = false
+                                }
+                            }
                                     
 
 
@@ -233,7 +230,7 @@ struct SwiftPlayground {
             print("You spent \(counterTotal) hours on screens this week.")
         }
         else {
-            print("Give me your tiem travel tech now!")
+            print("Give me your time travel tech now!")
             print("There was more hours of screen than hours in week. This is, obviously, above the limit.")
         }
     }
