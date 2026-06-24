@@ -229,7 +229,13 @@ struct SwiftPlayground {
                 errorInput()
             }
         }
-        let counterTotal = counterFriday +
-        print("You spent \(counterTotal)")
+        let counterTotal = counterMonday + counterTuesday + counterWednesday + counterThursday + counterFriday + counterSaturday + counterSunday
+        if counterTotal <= 168 {
+            print("You spent \(counterTotal) hours on screens this week. this is")
+        }
+        else {
+            print("Give me your tiem travel tech now!")
+            print("There was more hours of screen than hours in week")
+        }
     }
 }
