@@ -4,6 +4,7 @@
 @main
 struct SwiftPlayground {
     static func main() {
+        //declares a whole bunch of variavles and constants
         var runningLesser = true
         var runningGreater = true
         var platformChooser = 0
@@ -27,38 +28,24 @@ struct SwiftPlayground {
 
         
 
-
+        //sets a function that, if called upon, will throw an input error
         func errorInput() {
             print("Error in input. Please try again.")
         }
+        //starts a loop so that while runningLesser is ewual to true it will do all encapsulated
         while runningLesser == true {
+            //asks for the daily time limit
             print("Welcome. What is the daily time limit for this week?")
             if let userInput = readLine(), let timeAllowed = Int(userInput) {
                 if timeAllowed >= 1 {
                     if timeAllowed <= 5 {
-                        runningLesser = false
-
-                    }
-                    else {
-                        errorInput()
-                    }
-                }
-                else {
-                    errorInput()
-                }
-            }
-            else {
-                errorInput()
-            }
-        }
-        while runningGreater == true {
+                                while runningGreater == true {
             while runningMonday == true {
                 if platformChooser <= 3 {
                     platformChooser = platformChooser + 1
 
                     print("How many hours did you spend on \(socialPlatforms[platformChooser]) this monday?")
                     if let userInput = readLine(), let temporaryCounter = Double(userInput) {
-                        //doing restrict to 24 hour
                         counterMonday = counterMonday + temporaryCounter
                     }
                     else {
@@ -177,13 +164,29 @@ struct SwiftPlayground {
             
 
         }
+                        runningLesser = false
+
+                    }
+                    else {
+                        errorInput()
+                    }
+                }
+                else {
+                    errorInput()
+                }
+            }
+            else {
+                errorInput()
+            }
+        }
+
         let counterTotal = counterMonday + counterTuesday + counterWednesday + counterThursday + counterFriday + counterSaturday + counterSunday
         if counterTotal >= totalTimeInWeek {
             print("Would you mind sharing your time-turner with the rest of us? We mortals don't have time travel.")
             print("The total screen time was more than the number of hours in the week. This is, obviously, over the limit.")
         } 
         else {
-            print("Your total screen time was \(counterTotal). ")
+            print("Your total screen time was \(counterTotal). This")
         }
     }
 }
